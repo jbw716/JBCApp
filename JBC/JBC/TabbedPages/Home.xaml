@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="JBC.Home"
+             Padding="20, 0, 20, 0">
+    
+    <AbsoluteLayout>
+
+        <!--<Image x:Name="image" 
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+               AbsoluteLayout.LayoutFlags="All"/>-->
+
+        <!--<BoxView Color="Aqua" 
+                 WidthRequest="2" 
+                 HorizontalOptions="Center" 
+                 VerticalOptions="Fill" 
+                 AbsoluteLayout.LayoutBounds="0, 0.7, 1, 1" 
+                 AbsoluteLayout.LayoutFlags="All"/>
+        -->
+
+        <Label Text="Welcome" 
+               FontSize="Large" 
+               HorizontalOptions="Center" 
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0.5, 0.04" 
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Label.FontFamily> <!--How to customize font.-->
+                <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>RaphLanokFuture</OnPlatform.iOS>
+                    <OnPlatform.Android>RaphLanokFuture.ttf#RaphLanokFuture</OnPlatform.Android>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Label x:Name="WelcomeLabel" Margin="35" 
+               FontSize="14"
+               AbsoluteLayout.LayoutBounds="0.5, 0.1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               FontFamily="SinkinSans"/>
+       
+        <Button Text="About Us" 
+                x:Name="btnAboutUs" 
+                BackgroundColor="#800000" 
+                TextColor="White"  
+                Clicked="AboutUs_Clicked" 
+                AbsoluteLayout.LayoutBounds="0.5, 0.6, 1, 0.075" 
+                AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button Text="Location" 
+                BackgroundColor="#800000" 
+                TextColor="White"
+                Clicked="Location_Clicked"
+                AbsoluteLayout.LayoutBounds="0.5, 0.7, 1, 0.075" 
+                AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label Text="Connect With Us" 
+               FontSize="Large" 
+               HorizontalOptions="Center" 
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0.5, 0.8" 
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>RaphLanokFuture</OnPlatform.iOS>
+                    <OnPlatform.Android>RaphLanokFuture.ttf#RaphLanokFuture</OnPlatform.Android>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <!--<Label x:Name="Connectlabel" Margin="20"
+               FontFamily="SinkinSans"/>-->
+
+        <Button Image="FBlogo.png"
+                x:Name="btnFBlogo"
+                BackgroundColor="#3b5998"
+                Clicked="FBlogo_Clicked"
+                AbsoluteLayout.LayoutBounds="0.375, 0.925" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Button Image="JBClogo.png"
+                x:Name="btnJBClogo"
+                BackgroundColor="#990000"
+                Clicked="JBClogo_Clicked"
+                AbsoluteLayout.LayoutBounds="0.625, 0.925" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!--<Label Text="Hello Forms with XAML">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>SinkinSans</OnPlatform.iOS>
+                    <OnPlatform.Android>SinkinSans.ttf#SinkinSans</OnPlatform.Android>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+        -->
+
+        <!-- <Label Text="SinkinSans" FontSize="25" HorizontalOptions="Center"/> -->
+
+    </AbsoluteLayout>
+    
+</ContentPage>
+

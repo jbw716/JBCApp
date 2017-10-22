@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:JBC"
+            x:Class="JBC.JBCPage"
+            Title="Jerusalem Baptist Church">
+
+    <local:Home Title="Home" Icon="home.png"/>
+    <local:Notes Title="Notes" Icon="notes.png"/>
+    <local:News Title="News" Icon="rss.png"/>
+    <local:YoutubeViewPage Title="Videos" Icon="videos.png"/>
+
+</TabbedPage>
